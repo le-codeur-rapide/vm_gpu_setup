@@ -5,5 +5,7 @@ apt install -y htop nvtop
 
 # install python stuff
 pip install uv
-uv venv
+if [ ! -d .venv ]; then
+	uv venv
+fi
 uv pip install vllm

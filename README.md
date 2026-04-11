@@ -53,3 +53,14 @@ Result:
 
 -> No cache usage
 -> ~5-10 tok / sec
+
+
+## Experiment H100 + 200 Gb disk
+
+It was bad idea 200 Gb disk
+Used claude code + ralph loops
+Got to peak 70 toks / sec.
+Maybe multi agent could help
+
+Promising
+

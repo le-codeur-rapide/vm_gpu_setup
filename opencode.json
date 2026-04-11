@@ -5,14 +5,16 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Runpod vLLM",
       "options": {
-        "baseURL": "https://localhost:8000",
+        "baseURL": "https://localhost:8000/v1",
         "apiKey": "dummy"
       },
       "models": {
-        "Qwopus": {
-          "name": "Qwopus"
+        "my-model ": {
+          "name": "my-model"
         }
       }
     }
-  }
+  },
+  "model": "myprovider/my-model",
+  "small_model": "myprovider/my-model"
 }

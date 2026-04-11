@@ -19,3 +19,7 @@ uv run vllm serve Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled   \
     --enable-auto-tool-choice   \
     --tool-call-parser openai   \
     --download-dir /dev/shm/vllm-models
+
+
+# this one worked on 3 x RTX 5090
+uv run vllm serve Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled       --tokenizer Qwen/Qwen3.5-27B       --quantization fp8       --dtype float16       --max-model-len 8192       --gpu-memory-utilization 0.90     --served-model-name my-model       --enable-auto-tool-choice       --tool-call-parser openai       --download-dir /dev/shm/vllm-models --pipeline_parallel_size=3

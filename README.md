@@ -6,6 +6,8 @@ mkdir -p /dev/shm/vllm-models
 and add --download-dir /dev/shm/vllm-models to vllm serve
 -> but then i have a oom oh H100, maybe it is better to just buy the disk ?
 
+- vllm gpu parallelism : https://docs.vllm.ai/en/stable/serving/parallelism_scaling/
+
 ## Experiment on 3x RTX 5090 (282Gb RAM, 3x 32GB Vram)
 
 VLLM setup:
